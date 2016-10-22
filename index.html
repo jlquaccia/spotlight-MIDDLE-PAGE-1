@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="spotlightMidPage1">
 <head>
   <meta charset="UTF-8">
   <title>S Blob</title>
@@ -14,7 +14,7 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-controller="MainCtrl">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -36,7 +36,7 @@
       <div class="col-md-12">
         <img src="img/girl_one.png">
         <strong>SOFIA GRACE</strong><br>
-        Tuesday 12 September 2016
+        {{currentDate | date:'EEEE dd MMMM yyyy'}}
         
         <div class="text-right">
           <ul>
@@ -65,9 +65,14 @@
       </div>
     </div>
   </div>
+  
+  <!-- Angular -->
+  <script src="node_modules/angular/angular.js"></script>
   <!-- jQuery -->
-  <script src="js/jquery-3.1.1.js"></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
