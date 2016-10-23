@@ -1,3 +1,104 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* General */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+body {
+  height: 100%;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Background Color */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.grayBG {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+  background: #2E2A2A;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Header */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 .title {
   font-family: 'Pacifico', cursive;
+}
+
+.text-center .searchInput {
+  width: 270px;
+  font-weight: 200;
+}
+
+.girlOne {
+  width: 60px;
+}
+
+.nameAndDate {
+  display: inline;
+  position: relative;
+  top: -45px;
+  left: 70px;
+}
+
+.headerWrapper {
+  margin-top: 20px;
+  height: 4.5em;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+span.date {
+  font-weight: 200;
+  font-size: 10px;
+  position: relative;
+  top: -5px;
+}
+
+ul.social {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 14px;
+}
+
+img.socialIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.social span.userName {
+  color: #7D7D8B;
+}
+
+.social span.userName,
+.social span.likes {
+  font-size: 9px;
+}
+
+.social li {
+  text-align: left;
+  line-height: 9px;
+  margin-right: 20px;
+}
+
+.socialInfo {
+  float: right;
+}
+
+.userPhotoAndDate {
+  float: left;
+}
+
+.mainHeaderWrapper {
+  background-color: #fff;
+  padding-top: 10px;
 }

@@ -15,55 +15,81 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-controller="MainCtrl">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-4 text-left">
-          <span class="title">SBlob</span>
-        </div>
-        <div class="col-md-4 text-center">
-          <input type="text" placeholder="Search">
-        </div>
-        <div class="col-md-4 text-right">
-          <i class="ion-ios-bell-outline"></i><i class="fa fa-sign-in" aria-hidden="true"></i>
+  <div class="grayBG">
+    <!-- Header -->
+    <div class="mainHeaderWrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4 text-left">
+              <span class="title">SBlob</span>
+            </div>
+            <div class="col-md-4 text-center">
+              <input type="text" placeholder="Search" class="searchInput">
+            </div>
+            <div class="col-md-4 text-right">
+              <i class="ion-ios-bell-outline"></i><i class="fa fa-sign-in" aria-hidden="true"></i>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <img src="img/girl_one.png">
-        <strong>SOFIA GRACE</strong><br>
-        {{currentDate | date:'EEEE dd MMMM yyyy'}}
-        
-        <div class="text-right">
-          <ul>
-            <li>
-              <img src="img/facebook.png" alt="Facebook">
-              <span>James Sven</span>
-              <span>765,756 Likes</span>
-            </li>
-            <li>
-              <img src="img/instagram.png" alt="Instagram">
-              <span>Adam Fab</span>
-              <span>443k Followers</span>
-            </li>
-            <li>
-              <img src="img/twitter.png" alt="Twitter">
-              <span>Jack Sven</span>
-              <span>223k Followers</span>
-            </li>
-            <li>
-              <img src="img/youtube.png" alt="YouTube">
-              <span>Mo Vlogs</span>
-              <span>789k Subscribers</span>
-            </li>
-          </ul>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 headerWrapper">
+            <div class="userPhotoAndDate">
+              <img class="img-responsive girlOne" src="img/girl_one.png">
+              <div class="nameAndDate">
+                <strong>SOFIA GRACE</strong><br>
+                <span class="date">{{currentDate | date:'EEEE dd MMMM yyyy'}}</span>
+              </div>
+            </div>        
+            
+            <div class="socialInfo">
+              <ul class="social">
+                <li>
+                  <a href="#">
+                    <img class="img-responsive socialIcon" src="img/facebook.png" alt="Facebook">
+                  </a>
+                  <span class="userName">James Sven</span><br>
+                  <span class="likes">765,756 Likes</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-responsive socialIcon" src="img/instagram.png" alt="Instagram">
+                  </a>
+                  <span class="userName">Adam Fab</span><br>
+                  <span class="likes">443k Followers</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-responsive socialIcon" src="img/twitter.png" alt="Twitter">
+                  </a>
+                  <span class="userName">Jack Sven</span><br>
+                  <span class="likes">223k Followers</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-responsive socialIcon" src="img/youtube.png" alt="YouTube">
+                  </a>
+                  <span class="userName">Mo Vlogs</span><br>
+                  <span class="likes">789k Subscribers</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <div class="row">
+      <div class="col-md-12 main">
+        
+      </div>
+    </div>
+    <!-- End Main -->
   </div>
   
   <!-- Angular -->
