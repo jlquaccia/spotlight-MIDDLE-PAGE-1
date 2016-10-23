@@ -19,7 +19,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: hidden;
+  overflow: auto;
   z-index: -1;
   background: #2E2A2A;
 }
@@ -101,4 +101,65 @@ img.socialIcon {
 .mainHeaderWrapper {
   background-color: #fff;
   padding-top: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Main */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.main img {
+  border: 3px solid #F0E33E;
+}
+
+.main {
+  color: #F9F9F9;
+}
+
+.poem {
+  margin-top: 25px;
+}
+
+.poem p {
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.poem .girlTwo {
+  width: 415px;
+  max-width: initial;
+}
+
+.bio .girlThree {
+  width: 250px;
+  max-width: initial;
+  position: relative;
+  left: 7px;
+}
+
+.bio .girlFour {
+  width: 365px;
+  max-width: initial;
+  position: relative;
+  top: 55px;
+  left: 4px;
+}
+
+.bio2 .girlFive {
+  width: 250px;
+  max-width: initial;
+  position: relative;
+  top: 52px;
+  left: 75px;
+}
+
+.bio .bioTitle {
+  font-size: 6.5em;
+  padding-left: 50px;
+}
+
+.bio2 p {
+  font-size: 11px;
+  font-weight: 600;
+  position: relative;
+  top: 90px;
+  width: 380px;
 }
