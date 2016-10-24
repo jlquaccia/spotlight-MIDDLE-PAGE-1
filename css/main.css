@@ -29,6 +29,19 @@ html {
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .title {
   font-family: 'Pacifico', cursive;
+  color: #000;
+}
+
+.sblobTitle:hover {
+  text-decoration: none;
+}
+
+.bellAndSignIn {
+  color: #000;
+}
+
+.bellAndSignIn:hover {
+  color: #000;
 }
 
 .text-center .searchInput {
@@ -112,6 +125,8 @@ img.socialIcon {
 
 .main {
   color: #F9F9F9;
+  position: relative;
+  width: 1060px;
 }
 
 .poem {
@@ -121,6 +136,7 @@ img.socialIcon {
 .poem p {
   font-size: 11px;
   line-height: 1.2;
+  width: 125%;
 }
 
 .poem .girlTwo {
@@ -132,7 +148,7 @@ img.socialIcon {
   width: 250px;
   max-width: initial;
   position: relative;
-  left: 7px;
+  left: 44px;
 }
 
 .bio .girlFour {
@@ -140,7 +156,7 @@ img.socialIcon {
   max-width: initial;
   position: relative;
   top: 55px;
-  left: 4px;
+  left: 65px;
 }
 
 .bio2 .girlFive {
@@ -148,18 +164,129 @@ img.socialIcon {
   max-width: initial;
   position: relative;
   top: 52px;
-  left: 75px;
+  left: 143px;
 }
 
 .bio .bioTitle {
   font-size: 6.5em;
-  padding-left: 50px;
+  position: relative;
+  left: .9em;
+  top: 5px;
 }
 
 .bio2 p {
   font-size: 11px;
   font-weight: 600;
   position: relative;
-  top: 90px;
+  top: 80px;
   width: 380px;
+  left: 43px;
+}
+
+.ion-android-expand {
+  color: #7D7D7F;
+  font-size: 20px;
+  position: absolute;
+  right: 8px;
+  top: 123px;
+}
+
+.ion-ios-arrow-forward {
+  color: #4E4B4B;
+  font-size: 6em;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  z-index: 10;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Footer */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.footerBG {
+  height: 45px;
+  background-color: #1D1D1F;
+  position: relative;
+  top: 60px;
+  margin-bottom: 10px;
+}
+
+.footerBG img.img-responsive {
+  margin: 0 auto;
+}
+
+.thumb_a {
+  width: 30px;
+  max-height: 40px;
+}
+
+.thumb_b {
+  width: 64px;
+  max-height: 40px;
+}
+
+ul.thumbnails {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  position: relative;
+  top: 2.7px;
+}
+
+ul.thumbnails li {
+  display: block;
+  margin-right: 7px;
+}
+
+footer .container {
+  width: 1060px;
+}
+
+.footerBlurb {
+  position: absolute;
+  width: 175px;
+  background-color: #595758;
+  color: #fff;
+  left: -180px;
+  top: -70px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px;
+}
+
+.footerBlurb p {
+  margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Footer Icons */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.footerInfoCircle {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #BBBCC0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul.footerRightIcons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-flex;
+  list-style: none;
+}
+
+ul.footerRightIcons li {
+  margin-right: 10px;
+}
+
+ul.footerRightIcons li a {
+  color: #7D7D7F;
+  font-weight: 600;
+}
+
+ul.footerRightIcons li a:hover {
+  text-decoration: none;
 }
