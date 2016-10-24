@@ -189,6 +189,7 @@ img.socialIcon {
   position: absolute;
   right: 8px;
   top: 123px;
+  z-index: 10;
 }
 
 .ion-ios-arrow-forward {
