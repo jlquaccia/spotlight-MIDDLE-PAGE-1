@@ -21,7 +21,8 @@ html {
   right: 0;
   overflow: auto;
   z-index: -1;
-  background: #2E2A2A;
+  background-image: url('../img/bg.png');
+  background-size: cover;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -185,11 +186,11 @@ img.socialIcon {
 
 .ion-android-expand {
   color: #7D7D7F;
-  font-size: 20px;
   position: absolute;
   right: 8px;
-  top: 123px;
+  top: 127px;
   z-index: 10;
+  width: 15px;
 }
 
 .ion-ios-arrow-forward {
@@ -290,4 +291,15 @@ ul.footerRightIcons li a {
 
 ul.footerRightIcons li a:hover {
   text-decoration: none;
+}
+
+ul.footerRightIcons li a img {
+  width: 15px;
+  top: -2px;
+}
+
+ul.footerRightIcons li a img.eye {
+  width: 25px;
+  top: -2px;
+  position: relative;
 }
