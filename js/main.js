@@ -3,5 +3,6 @@
 
   app.controller('MainCtrl', ['$scope', function($scope) {
     $scope.currentDate = new Date();
+    $scope.toggle = false;
   }]);
 })();

@@ -3,7 +3,7 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 992px) {
   .ion-android-expand {
-    top: 125px;
+    top: 130px;
   }
 
   .mainHeaderWrapper {
@@ -19,12 +19,16 @@
     display: none;
   }
 
+  #hamburger {
+    display: block;
+  }
+
   .mainHeaderWrapper {
     height: auto;
     padding: 20px 0;
   }
 
   .ion-android-expand {
-    top: 65px;
+    top: 71px;
   }
 }
