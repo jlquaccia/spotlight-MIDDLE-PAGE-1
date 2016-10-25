@@ -12,10 +12,14 @@
   <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <!-- Book Block -->
+  <link rel="stylesheet" href="css/bookblock.css">
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.css">
   <!-- Responsiveness CSS -->
   <link rel="stylesheet" href="css/responsiveness.css">
+  <!-- Modernizr -->
+  <script src="js/modernizr.custom.js"></script>
 </head>
 <body ng-controller="MainCtrl">
   <div class="grayBG" ngsf-fullscreen>
@@ -50,7 +54,6 @@
 
       <div class="container-fluid">
         <a href="#">
-          <!-- <i class="ion-android-expand"></i> -->
           <img class="ion-android-expand" src="img/enlarge.png" alt="Enlarge" ngsf-toggle-fullscreen>
         </a>
 
@@ -103,68 +106,115 @@
     <!-- End Header -->
 
     <!-- Main -->
-    <div class="container main">
-      <a href="#" class="arrow">
-        <i class="ion-ios-arrow-forward"></i>
-      </a>
+    <div class="bb-custom-wrapper">
+      <div id="bb-bookblock" class="bb-bookblock">
+        <div class="bb-item">
+          <div class="container main">
+            <a href="#" class="arrow" >
+              <i class="ion-ios-arrow-forward"></i>
+            </a>
 
-      <div class="row">
-        <div class="col-lg-4 poem">
-          <img class="img-responsive girlTwo" src="img/girl_two.png">
-          <h4><strong>Waiting for your love</strong></h4>
-          <p>love is strong, love is true.I’m waiting for it, longing for you.The main smiles, I see your name in the stars but, I can’t read it, it’s still too far.Destiny holds me in the palm of her,I need relief from this hot burning sand.I want to hold you, feel your touch,I’ve waited so long, this is all toomuch.Sweetness abides in the clouds up above,carry me there on the wings of your love.The warmth that comes from the one you love so,in the dead of winter can make flowers grow.I have a treacherous road to travel, before the mysteries of life I unravel.But, you’ll be with me forever, your love in my heart,till the day we meet and from there never part.</p>
-          <h6><strong>Poem by Sofia Grace.</strong></h6>
-        </div>
-        <div class="col-lg-8 bio">
-          <h1 class="bioTitle">NEW BEAUTY!</h1>
-          <div class="col-lg-4">
-            <img class="img-responsive girlThree" src="img/girl_three.png">
+            <div class="row">
+              <div class="col-lg-4 poem">
+                <img class="img-responsive girlTwo" src="img/girl_two.png">
+                <h4><strong>Waiting for your love</strong></h4>
+                <p>love is strong, love is true.I’m waiting for it, longing for you.The main smiles, I see your name in the stars but, I can’t read it, it’s still too far.Destiny holds me in the palm of her,I need relief from this hot burning sand.I want to hold you, feel your touch,I’ve waited so long, this is all toomuch.Sweetness abides in the clouds up above,carry me there on the wings of your love.The warmth that comes from the one you love so,in the dead of winter can make flowers grow.I have a treacherous road to travel, before the mysteries of life I unravel.But, you’ll be with me forever, your love in my heart,till the day we meet and from there never part.</p>
+                <h6><strong>Poem by Sofia Grace.</strong></h6>
+              </div>
+              <div class="col-lg-8 bio">
+                <h1 class="bioTitle">NEW BEAUTY!</h1>
+                <div class="col-lg-4">
+                  <img class="img-responsive girlThree" src="img/girl_three.png">
+                </div>
+                <div class="col-lg-4">
+                  <img class="img-responsive girlFour" src="img/girl_four.png">
+                </div>
+
+                <div style="clear:both;"></div>
+              </div>
+              <div class="col-lg-8 bio2">
+                <div class="col-lg-5">
+                  <p>Another two hours went by, 23 trains later, she stood up and started to leave. She looked behind her as she heard the familiar sound of a train screeching to a halt. Hope filled her heart once again as it had done 31 trains ago. She stood there and waited, the usual businessman in high collared shirts and blazers with briefcases and young mums with a pushchair and another child hanging onto her hand, the students with a heavy bag of books and the businesswoman in trainers with heels sticking out of her bag, they all bun- dled off the train and headed straight for the exit of the train station.</p>
+                </div>
+                <div class="col-lg-3">
+                  <img class="img-responsive girlFive" src="img/girl_five.png">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-4">
-            <img class="img-responsive girlFour" src="img/girl_four.png">
+          <!-- End Main -->
+
+          <div class="footerBlurb">
+            <p> Sofia Grace is a stunning holly- wood actress and a model who is well known for her presence in many super duper hit movies. Her talent ... more</p>
+          </div>
+        </div>
+
+        <div class="bb-item">
+          <div class="container main">
+            <a href="#" class="arrow">
+              <i class="ion-ios-arrow-forward"></i>
+            </a>
+
+            <div class="row">
+              <div class="col-lg-4 poem">
+                <img class="img-responsive girlTwo" src="img/girl_two.png">
+                <h4><strong>Waiting for your love</strong></h4>
+                <p>love is strong, love is true.I’m waiting for it, longing for you.The main smiles, I see your name in the stars but, I can’t read it, it’s still too far.Destiny holds me in the palm of her,I need relief from this hot burning sand.I want to hold you, feel your touch,I’ve waited so long, this is all toomuch.Sweetness abides in the clouds up above,carry me there on the wings of your love.The warmth that comes from the one you love so,in the dead of winter can make flowers grow.I have a treacherous road to travel, before the mysteries of life I unravel.But, you’ll be with me forever, your love in my heart,till the day we meet and from there never part.</p>
+                <h6><strong>Poem by Sofia Grace.</strong></h6>
+              </div>
+              <div class="col-lg-8 bio">
+                <h1 class="bioTitle">NEW BEAUTY!</h1>
+                <div class="col-lg-4">
+                  <img class="img-responsive girlThree" src="img/girl_three.png">
+                </div>
+                <div class="col-lg-4">
+                  <img class="img-responsive girlFour" src="img/girl_four.png">
+                </div>
+
+                <div style="clear:both;"></div>
+              </div>
+              <div class="col-lg-8 bio2">
+                <div class="col-lg-5">
+                  <p>Another two hours went by, 23 trains later, she stood up and started to leave. She looked behind her as she heard the familiar sound of a train screeching to a halt. Hope filled her heart once again as it had done 31 trains ago. She stood there and waited, the usual businessman in high collared shirts and blazers with briefcases and young mums with a pushchair and another child hanging onto her hand, the students with a heavy bag of books and the businesswoman in trainers with heels sticking out of her bag, they all bun- dled off the train and headed straight for the exit of the train station.</p>
+                </div>
+                <div class="col-lg-3">
+                  <img class="img-responsive girlFive" src="img/girl_five.png">
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div style="clear:both;"></div>
-        </div>
-        <div class="col-lg-8 bio2">
-          <div class="col-lg-5">
-            <p>Another two hours went by, 23 trains later, she stood up and started to leave. She looked behind her as she heard the familiar sound of a train screeching to a halt. Hope filled her heart once again as it had done 31 trains ago. She stood there and waited, the usual businessman in high collared shirts and blazers with briefcases and young mums with a pushchair and another child hanging onto her hand, the students with a heavy bag of books and the businesswoman in trainers with heels sticking out of her bag, they all bun- dled off the train and headed straight for the exit of the train station.</p>
+          <div class="footerBlurb">
+            <p> Sofia Grace is a stunning holly- wood actress and a model who is well known for her presence in many super duper hit movies. Her talent ... more</p>
           </div>
-          <div class="col-lg-3">
-            <img class="img-responsive girlFive" src="img/girl_five.png">
-          </div>
+          <!-- End Main -->
         </div>
       </div>
     </div>
-    <!-- End Main -->
 
     <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12 footerBG text-center">
-            <div class="footerBlurb">
-              <p> Sofia Grace is a stunning holly- wood actress and a model who is well known for her presence in many super duper hit movies. Her talent ... more</p>
-            </div>
-
             <ul class="thumbnails">
               <li>
-                <a href="#">
+                <a href="#" id="bb-nav-last" class="bb-custom-icon bb-custom-icon-first">
                   <img class="img-responsive thumb_a" src="img/thumb_one.png">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" id="bb-nav-prev" class="bb-custom-icon bb-custom-icon-arrow-left">
                   <img class="img-responsive thumb_a" src="img/thumb_two.png">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" id="bb-nav-next" class="bb-custom-icon bb-custom-icon-arrow-right">
                   <img class="img-responsive thumb_a" src="img/thumb_three.png">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" id="bb-nav-first" class="bb-custom-icon bb-custom-icon-last">
                   <img class="img-responsive thumb_b" src="img/thumb_four.png">
                 </a>
               </li>
@@ -229,9 +279,92 @@
   <script src="bower_components/angular-screenfull/dist/angular-screenfull.min.js"></script>
   <!-- jQuery -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Book Block JS -->
+  <script src="js/jquery.bookblock.js"></script>
   <!-- Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <!-- Main JS -->
   <script src="js/main.js"></script>
+  <script>
+    var Page = (function() {
+      var config = {
+        $bookBlock: $('#bb-bookblock'),
+        $navNext: $('#bb-nav-next'),
+        $navPrev: $('#bb-nav-prev'),
+        $navFirst: $('#bb-nav-first'),
+        $navLast: $('#bb-nav-last')
+      },
+      init = function() {
+        config.$bookBlock.bookblock({
+          orientation : 'vertical',
+          speed: 800,
+          direction: 'ltr',
+          shadowSides: 0.8,
+          shadowFlip: 0.7
+        });
+        initEvents();
+      },
+      initEvents = function() {
+        var $slides = config.$bookBlock.children();
+
+        // add navigation events
+        config.$navNext.on('click touchstart', function() {
+          config.$bookBlock.bookblock('next');
+          return false;
+        });
+
+        config.$navPrev.on('click touchstart', function() {
+          config.$bookBlock.bookblock('prev');
+          return false;
+        });
+
+        config.$navFirst.on('click touchstart', function() {
+          config.$bookBlock.bookblock('first');
+          return false;
+        });
+
+        config.$navLast.on('click touchstart', function() {
+          config.$bookBlock.bookblock('last');
+          return false;
+        });
+
+        // add swipe events
+        $slides.on({
+          'swipeLeft': function(event) {
+            config.$bookBlock.bookblock('prev');
+            return false;
+          },
+          'swipeRight': function(event) {
+            config.$bookBlock.bookblock('next');
+            return false;
+          }
+        });
+
+        // add keyboard events
+        $(document).keydown(function(e) {
+          var keyCode = e.keyCode || e.which,
+              arrow = {
+                left: 37,
+                up: 38,
+                right: 39,
+                down: 40
+              };
+
+          switch (keyCode) {
+            case arrow.left:
+              config.$bookBlock.bookblock('next');
+              break;
+            case arrow.right:
+              config.$bookBlock.bookblock('prev');
+              break;
+          }
+        });
+      };
+
+      return {init: init};
+    })();
+
+    Page.init();
+  </script>
 </body>
 </html>

@@ -22,9 +22,9 @@ html {
   right: 0;
   overflow: auto;
   z-index: -1;
-  background-image: url('../img/bg.png');
-  -webkit-background-size: cover;
-  background-size: cover;
+  /*background-image: url('../img/bg.png');*/
+  /*-webkit-background-size: cover;
+  background-size: cover;*/
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -211,7 +211,7 @@ img.socialIcon {
   height: 45px;
   background-color: #1D1D1F;
   position: relative;
-  top: 60px;
+  top: 5px;
   margin-bottom: 10px;
 }
 
@@ -247,12 +247,12 @@ footer .container {
 }
 
 .footerBlurb {
-  position: absolute;
+  position: relative;
   width: 175px;
   background-color: #595758;
   color: #fff;
-  left: -180px;
-  top: -70px;
+  left: 50px;
+  top: -40px;
   font-size: 12px;
   font-weight: 400;
   padding: 1px;
