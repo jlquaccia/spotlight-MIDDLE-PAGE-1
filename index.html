@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/responsiveness.css">
 </head>
 <body ng-controller="MainCtrl">
-  <div class="grayBG">
+  <div class="grayBG" ngsf-fullscreen>
     <!-- Header -->
     <div class="mainHeaderWrapper">
       <div class="container">
@@ -51,7 +51,7 @@
       <div class="container-fluid">
         <a href="#">
           <!-- <i class="ion-android-expand"></i> -->
-          <img class="ion-android-expand" src="img/enlarge.png" alt="Enlarge">
+          <img class="ion-android-expand" src="img/enlarge.png" alt="Enlarge" ngsf-toggle-fullscreen>
         </a>
 
         <div class="row">
@@ -224,6 +224,9 @@
   
   <!-- Angular -->
   <script src="node_modules/angular/angular.js"></script>
+  <!-- Angular Screenfull -->
+  <script src="bower_components/screenfull/dist/screenfull.js"></script>
+  <script src="bower_components/angular-screenfull/dist/angular-screenfull.min.js"></script>
   <!-- jQuery -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->

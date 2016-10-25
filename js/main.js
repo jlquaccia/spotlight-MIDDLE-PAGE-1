@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('spotlightMidPage1', []);
+  var app = angular.module('spotlightMidPage1', ['angularScreenfull']);
 
   app.controller('MainCtrl', ['$scope', function($scope) {
     $scope.currentDate = new Date();
