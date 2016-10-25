@@ -383,3 +383,12 @@ ul.footerRightIcons li a img.eye {
   width: 0%;
   left: 50%;
 }
+
+.grayBG.fullscreen .main {
+  top: 75px;
+}
+
+.grayBG.fullscreen footer .container {
+  position: relative;
+  top: 75px;
+}
