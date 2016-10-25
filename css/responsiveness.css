@@ -42,6 +42,62 @@
   .bio .bioTitle {
     font-size: 5.5em;
     left: 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .poem .girlTwo, .bio .girlThree, .bio .girlFour, .bio2 .girlFive {
+    width: initial;
+    max-width: 100%;
+    position: static;
+  }
+
+  .poem .girlTwo {
+    margin: 40px auto 20px;
+  }
+
+  .poem p {
+    width: 75%;
+  }
+
+  .bio .girlFour {
+    position: relative !important;
+    left: 0;
+    top: -3px;
+    float: right;
+  }
+
+  .bio2 p {
+    margin: 20px auto;
+    top: 0;
+    left: 0;
+    width: initial;
+  }
+
+  .bio2 .girlFive {
+    margin: 0 auto;
+  }
+
+  .footerBlurb {
+    top: -105px;
+    left: 50%;
+    right: 0;
+    background-color: transparent;
+  }
+
+  .footerBlurb p {
+    margin: 0;
+    position: relative;
+    left: -50%;
+    background-color: #595758;
+  }
+
+  ul.footerRightIcons, .footerInfoCircle {
+    top: 127px;
+  }
+
+  ul.footerRightIcons {
+    left: 0;
   }
 }
 
@@ -84,6 +140,19 @@
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* 875px and Below */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 875px) {
+  .bio .girlFour {
+    float: none;
+  }
+
+  .bio .girlThree, .bio .girlFour {
+    margin: 0 auto;
+  }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 /* 768px and Below */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 768px) {
@@ -102,5 +171,9 @@
 
   .ion-android-expand {
     top: 71px;
+  }
+
+  ul.footerRightIcons, .footerInfoCircle {
+    top: 68px;
   }
 }
