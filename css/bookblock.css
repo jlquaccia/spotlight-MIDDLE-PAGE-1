@@ -27,6 +27,10 @@
   transform-origin: left center;
 }
 
+.fullscreen .bb-vertical .bb-page {
+  height: 120%;
+}
+
 .bb-horizontal .bb-page {
   width: 100%;
   height: 50%;
@@ -183,4 +187,8 @@
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
+}
+
+.fullscreen .bb-item {
+  height: 120%;
 }

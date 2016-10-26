@@ -229,10 +229,16 @@ img.socialIcon {
   position: relative;
   top: 5px;
   margin-bottom: 10px;
+  z-index: 150;
 }
 
 .footerBG img.img-responsive {
   margin: 0 auto;
+  opacity: 0.6;
+}
+
+.footerBG img.img-responsive.active {
+  opacity: 1;
 }
 
 .thumb_a {
@@ -276,6 +282,10 @@ footer .container {
 
 .footerBlurb p {
   margin: 0;
+}
+
+.fullscreen .footerBlurb {
+  top: 40px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -401,10 +411,14 @@ ul.footerRightIcons li a img.eye {
 }
 
 .grayBG.fullscreen .main {
-  top: 75px;
+  top: 45px;
 }
 
 .grayBG.fullscreen footer .container {
   position: relative;
   top: 75px;
+}
+
+.grayBG.fullscreen {
+  background-color: #2D2929;
 }
