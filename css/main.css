@@ -273,19 +273,22 @@ footer .container {
 }
 
 .footerBlurb {
-  position: relative;
+  position: absolute;
   width: 175px;
   background-color: #595758;
   color: #fff;
-  left: 50px;
-  top: -40px;
+  left: 10px;
+  bottom: 35px;
   font-size: 12px;
   font-weight: 400;
   padding: 1px;
+  display: none;
+  z-index: 150;
 }
 
 .footerBlurb p {
   margin: 0;
+  padding: 2px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/

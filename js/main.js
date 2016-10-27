@@ -22,5 +22,9 @@
 
       $scope.activePage--;
     };
+
+    $scope.infoToggle = function() {
+      $('.footerBlurb').fadeToggle();
+    };
   }]);
 })();
