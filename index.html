@@ -22,99 +22,101 @@
   <script src="js/modernizr.custom.js"></script>
 </head>
 <body ng-controller="MainCtrl">
-  <div class="grayBG" ngsf-fullscreen>
-    <!-- Header -->
-    <div class="mainHeaderWrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-sm-4 text-left mobileTitle">
-              <a href="#" class="sblobTitle">
-                <span class="title">SBlob</span>
-              </a>
-            </div>
-            <div class="col-sm-4 text-center mobileSearch">
-              <input type="text" placeholder="Search" class="searchInput">
-            </div>
-            <div class="col-sm-4 text-right mobileSignIn">
-              <a href="#" class="bellAndSignIn">
-                <i class="ion-ios-bell-outline"></i><i class="fa fa-sign-in" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div id="hamburger" ng-click="toggle = !toggle" ng-class="{open: toggle}">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+  <!-- Header -->
+  <div class="mainHeaderWrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-sm-4 text-left mobileTitle">
+            <a href="#" class="sblobTitle">
+              <span class="title">SBlob</span>
+            </a>
           </div>
-        </div>
-      </div>
+          <div class="col-sm-4 text-center mobileSearch">
+            <input type="text" placeholder="Search" class="searchInput">
+          </div>
+          <div class="col-sm-4 text-right mobileSignIn">
+            <a href="#" class="bellAndSignIn">
+              <i class="ion-ios-bell-outline"></i><i class="fa fa-sign-in" aria-hidden="true"></i>
+            </a>
+          </div>
 
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 headerWrapper">
-            <div class="userPhotoAndDate">
-              <img class="img-responsive girlOne" src="img/girl_one.png">
-              <div class="nameAndDate">
-                <strong>SOFIA GRACE</strong><br>
-                <span class="date">{{currentDate | date:'EEEE dd MMMM yyyy'}}</span>
-              </div>
-            </div>        
-            
-            <div class="socialInfo">
-              <ul class="social">
-                <li>
-                  <a href="#">
-                    <img class="img-responsive socialIcon" src="img/fb.png" alt="Facebook">
-                  </a>
-                  <span class="userName">James Sven</span><br>
-                  <span class="likes">765,756 Likes</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-responsive socialIcon" src="img/insta.png" alt="Instagram">
-                  </a>
-                  <span class="userName">Adam Fab</span><br>
-                  <span class="likes">443k Followers</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-responsive socialIcon" src="img/twitter.png" alt="Twitter">
-                  </a>
-                  <span class="userName">Jack Sven</span><br>
-                  <span class="likes">223k Followers</span>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-responsive socialIcon" src="img/youtube.png" alt="YouTube">
-                  </a>
-                  <span class="userName">Mo Vlogs</span><br>
-                  <span class="likes">789k Subscribers</span>
-                </li>
-              </ul>
-            </div>
+          <div id="hamburger" ng-click="toggle = !toggle" ng-class="{open: toggle}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Header -->
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 headerWrapper">
+          <div class="userPhotoAndDate">
+            <img class="img-responsive girlOne" src="img/girl_one.png">
+            <div class="nameAndDate">
+              <strong>SOFIA GRACE</strong><br>
+              <span class="date">{{currentDate | date:'EEEE dd MMMM yyyy'}}</span>
+            </div>
+          </div>        
+          
+          <div class="socialInfo">
+            <ul class="social">
+              <li>
+                <a href="#">
+                  <img class="img-responsive socialIcon" src="img/fb.png" alt="Facebook">
+                </a>
+                <span class="userName">James Sven</span><br>
+                <span class="likes">765,756 Likes</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-responsive socialIcon" src="img/insta.png" alt="Instagram">
+                </a>
+                <span class="userName">Adam Fab</span><br>
+                <span class="likes">443k Followers</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-responsive socialIcon" src="img/twitter.png" alt="Twitter">
+                </a>
+                <span class="userName">Jack Sven</span><br>
+                <span class="likes">223k Followers</span>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-responsive socialIcon" src="img/youtube.png" alt="YouTube">
+                </a>
+                <span class="userName">Mo Vlogs</span><br>
+                <span class="likes">789k Subscribers</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  <div class="grayBG" ngsf-fullscreen>
     <a href="#">
-      <img class="ion-android-expand" src="img/enlarge.png" alt="Enlarge" ngsf-toggle-fullscreen>
+      <img class="ion-android-expand fs" src="img/enlarge.png" alt="Enlarge" ngsf-toggle-fullscreen>
     </a>
-
-    <a href="#" id="bb-nav-next" class="arrow bb-custom-icon bb-custom-icon-arrow-right" ng-click="nextActive()">
-      <img class="ion-ios-arrow-forward" src="img/forward icon.png" alt="Forward Arrow">
-    </a>
-
-    <a href="#" id="bb-nav-prev" class="arrow bb-custom-icon bb-custom-icon-arrow-left" ng-click="prevActive()">
-      <img class="ion-ios-arrow-backward" src="img/forward icon.png" alt="Forward Arrow">
-    </a>
-
     <!-- Main -->
     <div class="bb-custom-wrapper">
+      <a href="#">
+        <img class="ion-android-expand" src="img/enlarge.png" alt="Enlarge" ngsf-toggle-fullscreen>
+      </a>
+
+      <a href="#" id="bb-nav-next" class="arrow bb-custom-icon bb-custom-icon-arrow-right" ng-click="nextActive()">
+        <img class="ion-ios-arrow-forward" src="img/forward icon.png" alt="Forward Arrow">
+      </a>
+
+      <a href="#" id="bb-nav-prev" class="arrow bb-custom-icon bb-custom-icon-arrow-left" ng-click="prevActive()">
+        <img class="ion-ios-arrow-backward" src="img/forward icon.png" alt="Forward Arrow">
+      </a>
+
       <div id="bb-bookblock" class="bb-bookblock">
         <!-- ================ -->
         <!-- Page One -->

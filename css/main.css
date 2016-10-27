@@ -15,12 +15,12 @@ html {
 /* Background Color */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .grayBG {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: auto;
+  overflow: hidden;
   z-index: -1;
   /*background-image: url('../img/bg.png');*/
   /*-webkit-background-size: cover;
@@ -196,6 +196,10 @@ img.socialIcon {
   border: none !important;
 }
 
+.ion-android-expand.fs {
+  display: none;
+}
+
 .ion-ios-arrow-forward {
   color: #4E4B4B;
   font-size: 6em;
@@ -282,10 +286,6 @@ footer .container {
 
 .footerBlurb p {
   margin: 0;
-}
-
-.fullscreen .footerBlurb {
-  top: 40px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -410,15 +410,38 @@ ul.footerRightIcons li a img.eye {
   left: 50%;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* Fullscreen Mode */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.fullscreen .bb-custom-wrapper {
+  transform: translateY(25%);
+}
+
 .grayBG.fullscreen .main {
   top: 45px;
 }
 
 .grayBG.fullscreen footer .container {
-  position: relative;
-  top: 75px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
 }
 
 .grayBG.fullscreen {
   background-color: #2D2929;
+  position: absolute;
+}
+
+.fullscreen .footerBlurb {
+  top: 40px;
+}
+
+.fullscreen .ion-android-expand {
+  display: none;
+}
+
+.fullscreen .ion-android-expand.fs {
+  display: block;
+  top: 10px;
 }
