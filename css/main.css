@@ -436,10 +436,6 @@ ul.footerRightIcons li a img.eye {
   position: absolute;
 }
 
-.fullscreen .footerBlurb {
-  top: 40px;
-}
-
 .fullscreen .ion-android-expand {
   display: none;
 }
