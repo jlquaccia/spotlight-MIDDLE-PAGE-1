@@ -20,7 +20,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: hidden;
+  overflow: inherit;
   z-index: -1;
   /*background-image: url('../img/bg.png');*/
   /*-webkit-background-size: cover;
@@ -204,7 +204,7 @@ img.socialIcon {
   color: #4E4B4B;
   font-size: 6em;
   position: absolute;
-  right: 110px;
+  right: 5%;
   top: 50%;
   z-index: 150;
   border: none !important;
@@ -217,7 +217,7 @@ img.socialIcon {
   color: #4E4B4B;
   font-size: 6em;
   position: absolute;
-  left: 110px;
+  left: 5%;
   top: 50%;
   z-index: 150;
   border: none !important;
@@ -234,6 +234,7 @@ img.socialIcon {
   top: 5px;
   margin-bottom: 10px;
   z-index: 150;
+  float: none;
 }
 
 .footerBG img.img-responsive {
@@ -283,7 +284,7 @@ footer .container {
   font-weight: 400;
   padding: 1px;
   display: none;
-  z-index: 150;
+  z-index: 175;
 }
 
 .footerBlurb p {
