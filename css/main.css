@@ -242,7 +242,8 @@ img.socialIcon {
   opacity: 0.6;
 }
 
-.footerBG img.img-responsive.active {
+.footerBG img.img-responsive.active,
+.footerBG img.img-responsive:hover {
   opacity: 1;
 }
 
