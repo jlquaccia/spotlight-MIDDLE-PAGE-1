@@ -189,8 +189,8 @@ img.socialIcon {
 .ion-android-expand {
   color: #7D7D7F;
   position: absolute;
-  right: 5px;
-  top: 130px;
+  right: 15px;
+  top: 140px;
   z-index: 150;
   width: 15px;
   border: none !important;
@@ -417,7 +417,7 @@ ul.footerRightIcons li a img.eye {
 /* Fullscreen Mode */
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
 .fullscreen .bb-custom-wrapper {
-  transform: translateY(25%);
+  transform: translateY(15%);
 }
 
 .grayBG.fullscreen .main {
