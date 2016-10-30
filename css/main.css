@@ -239,12 +239,15 @@ img.socialIcon {
 
 .footerBG img.img-responsive {
   margin: 0 auto;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .footerBG img.img-responsive.active,
 .footerBG img.img-responsive:hover {
   opacity: 1;
+}
+
+.footerBG img.img-responsive.active {
   border: 2px solid #EFE14F;
 }
 
