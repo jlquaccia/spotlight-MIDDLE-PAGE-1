@@ -64,7 +64,7 @@ html {
 }
 
 .headerWrapper {
-  margin-top: 20px;
+  margin-top: 0;
   height: 4.5em;
   padding-right: 10px;
   padding-left: 10px;
@@ -245,6 +245,7 @@ img.socialIcon {
 .footerBG img.img-responsive.active,
 .footerBG img.img-responsive:hover {
   opacity: 1;
+  border: 2px solid #EFE14F;
 }
 
 .thumb_a {
@@ -430,7 +431,7 @@ ul.footerRightIcons li a img.eye {
 
 .grayBG.fullscreen footer .container {
   position: absolute;
-  bottom: 50px;
+  bottom: 5%;
   left: 0;
   right: 0;
 }
